@@ -1,9 +1,10 @@
 import React from 'react'
-import Perfil from '../assets/perfil.png'
+import Perfil from '../assets/perfil2.png'
+import DownloadResume from './DownloadResume'
 
 const About = () => {
   return (
-      <div name="about" className="flex flex-col items-center pt-[200px] min-h-screen w-full bg-neutral-900  px-16 text-white border-b-[1px] border-zinc-500">
+      <div name="about" className="flex flex-col items-center justify-center min-h-screen w-full bg-neutral-900 py-24 px-16 text-white border-b-[1px] border-zinc-500">
         <div className='max-w-[1000px]'>
             <div className='text-2xl max-w-[600px] flex flex-col justify-center items-left'>
               <p className='text-3xl font-bold'>Hi, my name is</p>
@@ -20,6 +21,11 @@ const About = () => {
               I'm 20 years old and started writing code a year and a half ago. 
               Now I'm looking for a part-time job while continuing with the career of computer engineering at university.
             </p>
+
+            
+          </div>
+          <div className="flex align-center justify-center">
+            <DownloadResume />
           </div>
         </div>
       </div>

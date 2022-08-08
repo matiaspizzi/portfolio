@@ -5,7 +5,7 @@ import Technologies from './Technologies'
 const Experience = () => {
 
   return (
-    <div name="experience" className="flex flex-col items-center justify-center min-h-[400px] w-full bg-neutral-900 py-10 px-16 text-white border-b-[1px] border-zinc-500">
+    <div name="experience" className="flex flex-col items-center justify-center min-h-screen w-full bg-neutral-900 py-10 px-16 text-white border-b-[1px] border-zinc-500">
         <div className='max-w-[1000px]'>
             <h1 className='text-3xl w-fit border-b-2 border-red-400 font-bold'>Experience</h1>
             <p className='p-[15px] text-lg text-slate-400'>I have worked with all of this technologies:</p>
