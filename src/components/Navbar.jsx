@@ -10,36 +10,36 @@ const Navbar = () => {
   }
   
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#202020d2] text-gray-400">
-      <div>
-        <img src={Logo} className="w-[150px]" alt="" />
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#202020ef] text-gray-400">
+      <div className='cursor-pointer'>
+        <Link to="about" smooth={true} duration={500} offset={-80} ><img src={Logo} className="w-[150px]" alt="" /></Link>
       </div>
 
-      <ul className="hidden md:flex gap-10">
+      <ul className="hidden md:flex gap-10 text-[#9fc2b4]">
         <li className="py-6 text-xl">
-          <Link to="experience" smooth={true} duration={500} offset={-80} className="cursor-pointer">Experience</Link>
+          <Link to="experience" smooth={true} duration={500} offset={-80} >Experience</Link>
         </li>
         <li className="py-6 text-xl">
-          <Link to="education" smooth={true} duration={500} offset={-80} className="cursor-pointer">Education</Link>
+          <Link to="education" smooth={true} duration={500} offset={-80} >Education</Link>
         </li>
         <li className="py-6 text-xl">
-          <Link to="contact" smooth={true} duration={500} offset={-80} className="cursor-pointer">Contact</Link>
+          <Link to="contact" smooth={true} duration={500} offset={-80} >Contact</Link>
         </li>
       </ul>
 
-      <div className="md:hidden z-10" onClick={toggleNav}>
-        {nav ? <FaTimes size={30} className="cursor-pointer"/> : <FaBars size={30} className="cursor-pointer"/>}
+      <div className="md:hidden z-10 cursor-pointer" onClick={toggleNav}>
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#202020] flex flex-col justify-center items-center"}>
         <li className="py-6 text-3xl">
-          <Link to="experience" onClick={toggleNav} smooth={true} duration={500} offset={-80} className="cursor-pointer">Experience</Link>
+          <Link to="experience" onClick={toggleNav} smooth={true} duration={500} offset={-80} >Experience</Link>
         </li>
         <li className="py-6 text-3xl">
-          <Link to="education" onClick={toggleNav} smooth={true} duration={500} offset={-80} className="cursor-pointer">Education</Link>
+          <Link to="education" onClick={toggleNav} smooth={true} duration={500} offset={-80} >Education</Link>
         </li>
         <li className="py-6 text-3xl">
-          <Link to="contact" onClick={toggleNav} smooth={true} duration={500} offset={-80} className="cursor-pointer">Contact</Link>
+          <Link to="contact" onClick={toggleNav} smooth={true} duration={500} offset={-80} >Contact</Link>
         </li>
       </ul>
 
