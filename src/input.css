@@ -21,9 +21,59 @@
 @layer base {
     body{
         @apply font-[Ubuntu];
+        overflow-x: hidden;
     }
     Link, a {
         @apply cursor-pointer;
         @apply hover:text-white;
     }
+
+    .contactButton{
+      position: relative;
+      margin-top: 30px;
+      width: 80px;
+      height: 40px;
+      background-color: #202231;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: width .5s, border-radius .5s;
+    }
+
+    .contactButton *{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity .25s;
+    }
+
+    .contactButton svg{
+      opacity: 0;
+      display: none;
+    }
+
+    .contactButtonSucces{
+      width: 50px;
+      margin-top: 30px;
+      background-color: #44c08a;
+      border-radius: 50%;
+      transition: width .5s, border-radius .5s;
+    }
+
+    .contactButtonSucces span{
+      opacity: 0;
+      display: none;
+    }
+
+    .contactButtonSucces svg{
+      opacity: 1;
+      transition-delay: .5s;
+    }
+}
+
+@layer utilities {
+  .scrollbar-medium::-webkit-scrollbar {
+    width: 12px;
+  }
 }

@@ -15,15 +15,15 @@ const Navbar = () => {
         <Link to="about" smooth={true} duration={500} offset={-80} ><img src={Logo} className="w-[150px]" alt="" /></Link>
       </div>
 
-      <ul className="hidden md:flex gap-10 text-[#9fc2b4]">
-        <li className="py-6 text-xl">
-          <Link to="experience" smooth={true} duration={500}>Experience</Link>
+      <ul className="hidden md:flex gap-10 text-[#9fc2b4] pr-6">
+        <li className="my-6 text-xl">
+          <Link to="experience" className="py-[4px] hover:border-b-[1px]" smooth={true} duration={500} offset={-80}>Experience</Link>
         </li>
-        <li className="py-6 text-xl">
-          <Link to="education" smooth={true} duration={500}>Education</Link>
+        <li className="my-6 text-xl">
+          <Link to="education" className="py-[4px] hover:border-b-[1px]" smooth={true} duration={500} offset={-80}>Education</Link>
         </li>
-        <li className="py-6 text-xl">
-          <Link to="contact" smooth={true} duration={500}>Contact</Link>
+        <li className="my-6 text-xl">
+          <Link to="contact" className="py-[4px] hover:border-b-[1px]" smooth={true} duration={500} offset={-80}>Contact</Link>
         </li>
       </ul>
 
