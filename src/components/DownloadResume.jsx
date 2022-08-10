@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaFileDownload } from 'react-icons/fa'
 
 function DownloadResume() {
   return (

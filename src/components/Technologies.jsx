@@ -19,7 +19,7 @@ const Technologies = () => {
     const technologies = [HTML, CSS, Sass, JS, Git, ReactJS, NodeJS, Express, Socketio, Python, MySQL, MongoDB, Firebase, Tailwind, GraphQl]
 
     return (
-        <div className="grid justify-center items-center gap-8 lg:grid-cols-6 p-16 md:grid-cols-4 grid-cols-2 ">
+        <div className="grid justify-center items-center gap-8 lg:grid-cols-6 py-16 md:grid-cols-4 grid-cols-2 ">
             {technologies.map((tech) => (
                 <img src={tech} key={tech} alt="" className=' rounded-mdz p-3  bg-zinc-800 max-w-[110px] rounded-md' />
             ))}
